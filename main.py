@@ -6,6 +6,7 @@ import time
 
 if __name__ == "__main__":
     logging.basicConfig(format='%(asctime)s[%(levelname)s]%(message)s',filename='proxy_log.txt',level=logging.INFO,datefmt='%H:%M:%S')
+    logging.info("Spustenie serveru!")
     logging.info(time.strftime("%a, %d %b %Y %H:%M:%S ", time.localtime()))
     
     hostname = socket.gethostname()
